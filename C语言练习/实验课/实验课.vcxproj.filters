@@ -15,19 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="第二题.cpp">
+    <ClCompile Include="10-3.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="第一题.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="第三题.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="第四题.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="第八节课.cpp">
+    <ClCompile Include="1.4.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
