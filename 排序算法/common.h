@@ -3,8 +3,15 @@
  * 排序方法
  */
 enum SortType {
+    SortTypeStart,// 排序算法枚举开始标记，遍历排序算法时标记用，无实际算法
+
     BubbleSort,//冒泡排序
+    InsertionSort,//插入排序
+
+    SortTypeEnd, // 排序算法枚举终止标记，遍历排序算法时标记用，无实际算法
 };
+
+char* sortTypeName(enum SortType sortType);
 enum Orientation {
     Ascending,//升序
     Descending,//降序

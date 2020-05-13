@@ -1,7 +1,22 @@
 #include <time.h>
 
 #include"common.h"
-
+char* sortTypeName(enum SortType sortType) {
+	switch (sortType)
+	{
+	case SortTypeStart:
+		break;
+	case BubbleSort:
+		return "bubble sort";
+	case InsertionSort:
+		return "insertion sort";
+	case SortTypeEnd:
+		break;
+	default:
+		break;
+	}
+	return "unsupport sort type";
+}
 void generateArray(int array[], int length) {
 	srand((unsigned)time(NULL));
 
