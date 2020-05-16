@@ -1,10 +1,12 @@
 ﻿#include<stdio.h>
 int main() {
-	int x, a, b, c;
-	scanf("%d", &x);
-	a = x / 100;
-	b = x % 100 / 10;
-	c = x % 10;
-	printf("%d %d %d", c, b, a);
+	int max, a, b, c;
+	scanf("%d %d %d %d", &max, &a, &b, &c);
+	max = a;
+	if (b > max)
+		max = b;
+	if (c > max)
+		max = c;
+	printf("%d", max);
 	return 0;
 }
