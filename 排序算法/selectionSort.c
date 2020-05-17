@@ -1,14 +1,16 @@
 #include "selectionSort.h"
 void selectionSortInDescendingOrder(int array[], int length) {
-	for (int i = 1; i < length; i++) {
-		for (int j = i; j > 0; j--) {
-			if (array[j] > array[j - 1]) {
-				int num = array[j];
-				array[j] = array[j - 1];
-				array[j - 1] = num;
+	
+	for (int i = 0; i < length; i++) {
+		int maxIndex = i;
+		for (int j = i + 1; j < length; j++) {
+			if (array[j] > array[maxIndex]) {
+				maxIndex = j;
 			}
-			else break;
 		}
+		int temp = array[i];
+		array[i] = array[maxIndex];
+		array[maxIndex] = temp;
 	}
 }
 
@@ -16,15 +18,16 @@ void selectionSortInDescendingOrder(int array[], int length) {
 
 
 void selectionSortInAscendingOrder(int array[], int length) {
-	for (int i = 1; i < length; i++) {
-		for (int j = i; j > 0; j--) {
-			if (array[j] < array[j - 1]) {
-				int num = array[j - 1];
-				array[j - 1] = array[j];
-				array[j] = num;
+	for (int i = 0; i < length - 1; i++) {
+		int minIndex=i;
+		for (int j = 1; j < length; j++) {
+			if (array[j] < array[minIndex]) {
+				minIndex = j;
 			}
-			else break;
 		}
+		int temp = array[i];
+		array[i] = array[minIndex];
+		array[minIndex] = array[i];
 	}
 }
 
