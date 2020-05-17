@@ -10,6 +10,8 @@ char* sortTypeName(enum SortType sortType) {
 		return "bubble sort";
 	case InsertionSort:
 		return "insertion sort";
+	case SelectionSort:
+		return "selection sort";
 	case SortTypeEnd:
 		break;
 	default:

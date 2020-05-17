@@ -1,6 +1,7 @@
 #include "factory.h"
 #include "bubbleSort.h"
 #include "insertionSort.h"
+#include "selectionSort.h"
 void sortArray(int array[], int length, enum SortType sortType, enum Orientation orientation)
 {
 	if (sortType == BubbleSort) {
@@ -8,5 +9,8 @@ void sortArray(int array[], int length, enum SortType sortType, enum Orientation
 	}
 	if (sortType == InsertionSort) {
 		insertionSort(array, length, orientation);
+	}
+	if (sortType == SelectionSort) {
+	    selectionSort(array, length, orientation);
 	}
 }
