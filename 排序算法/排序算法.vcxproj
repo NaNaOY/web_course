@@ -151,6 +151,7 @@
     <ClCompile Include="common.c" />
     <ClCompile Include="factory.c" />
     <ClCompile Include="insertionSort.c" />
+    <ClCompile Include="quickSort.c" />
     <ClCompile Include="selectionSort.c" />
     <ClCompile Include="test.c" />
   </ItemGroup>
@@ -159,6 +160,7 @@
     <ClInclude Include="common.h" />
     <ClInclude Include="factory.h" />
     <ClInclude Include="insertionSort.h" />
+    <ClInclude Include="quickSort.h" />
     <ClInclude Include="selectionSort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -12,6 +12,8 @@ char* sortTypeName(enum SortType sortType) {
 		return "insertion sort";
 	case SelectionSort:
 		return "selection sort";
+	case QuickSort:
+		return "quick sort";
 	case SortTypeEnd:
 		break;
 	default:
