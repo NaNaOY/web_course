@@ -2,7 +2,7 @@
 void quickSortInDescendingOrder(int array[], int length) {
 	int low = 0;
 	int high = length - 1;
-	Quicksort(array, high, low, Descending);
+	Quicksort(array, low, high, Descending);
 
 }
 int Partition(int array[], int low, int high,enum Orientation orientation) {
@@ -39,6 +39,7 @@ void Quicksort(int array[], int low, int high, enum Orientation orientation) {
 		Quicksort(array, low, pivot - 1, orientation);
 		Quicksort(array, pivot + 1, high, orientation);
 	}
+
 }
 
 
