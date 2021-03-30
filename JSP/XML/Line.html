@@ -1,0 +1,95 @@
+<html>
+  <head>
+  	<style>
+  		.myCanvas{
+  			cursor:pointer;
+  			border:solid 1px #0000FF;
+  			background:#F0F0F0;
+  		}
+  	</style>
+    <script>
+    	var colorbuf=[];
+      colorbuf[0]="black";
+      colorbuf[1]="blue";
+      colorbuf[2]="yellow";
+      colorbuf[3]="red";
+      colorbuf[4]="green";
+      colorbuf[5]="gray";
+      var colorindex=3;
+     function RefreshColor()
+      {
+      	var canvas=document.getElementById("myCanvas");
+      	var context=canvas.getContext("2d");
+      	context.strokeStyle=colorbuf[colorindex % 6];
+      	context.beginPath();
+      	context.fillStyle=colorbuf[colorindex % 6];
+      	context.fillRect(0,0,100,50);
+      };
+       function coloradd()
+      {
+      	alert("coloradd");
+      	colorindex+=1;
+      	RefreshColor();
+      };
+      
+      function colorsub()
+      {
+      	alert("colordown");
+      	colorindex-=1;
+      	RefreshColor();
+      };
+      function writeMessage(canvas,message){
+        var context=canvas.getContext('2d');
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        context.fone='18pt Calibri';
+        context.fillStyle='black';
+        context.fillText(message,10,25);
+      }
+      function getMousePos(canvas,evt){
+          var rect = canvas.getBoundingClientRect(), root = document.documentElement;
+
+        // return relative mouse position
+        var mouseX = evt.clientX - rect.top - root.scrollTop;
+        var mouseY = evt.clientY - rect.left - root.scrollLeft;
+        return {
+          x: mouseX,
+          y: mouseY
+        };
+      }
+      window.onload=function(){
+        RefreshColor();
+        var canvas=document.getElementById("myCanvas");
+        var context=canvas.getContext("2d");
+        var downtag1=0;
+        context.beginPath();
+        context.moveTo(0,0);
+        canvas.addEventListener('mousedown',function(evt){
+          if(downtag1==0){
+            var mousePos=getMousePos(canvas,evt);
+            context.moveTo(mousePos.x,mousePos.y);
+            downtag1=1;
+          }
+        },false);
+        canvas.addEventListener('mouseup',function(evt){
+          downtag1=0;
+        },false);
+        canvas.addEventListener('mousemove',function(evt){
+          if(downtag1==1){
+            var mousePos=getMousePos(canvas,evt);
+            context.lineTo(mousePos.x,mousePos.y);
+            context.stroke();
+          }
+        },false);
+      };
+    </script>
+  </head>
+  <body>
+   <canvas id="myCanvas" width="800" height="600"></canvas>
+    <p>
+    <button onclick="coloradd()">Color+</button>
+ 		 <button onclick="colorsub()">Color-</button>
+  	</p>
+  
+  </body>
+</html>
+  
