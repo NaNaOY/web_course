@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server port="8080">
+  <module context="web_exercise" name="web_exercise" path="C:/Users/孓彦/Documents/school_c_language_course/JSP/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/web_exercise" type="j2ee"/>
+</server>
