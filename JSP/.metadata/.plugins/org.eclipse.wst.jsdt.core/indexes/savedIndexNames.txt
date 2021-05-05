@@ -1,9 +1,8 @@
 INDEX VERSION 1.3+C:\Users\цобх\Documents\school_c_language_course\JSP\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 735156183.index
-3603957867.index
 2830438180.index
 1578420886.index
-2037461041.index
 2355011491.index
+2037461041.index
 129650765.index
 656724669.index
