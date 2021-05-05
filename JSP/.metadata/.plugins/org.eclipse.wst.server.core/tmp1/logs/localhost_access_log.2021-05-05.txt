@@ -30,3 +30,12 @@
 127.0.0.1 - - [05/May/2021:19:47:18 +0800] "GET /web_exercise/img%E6%A0%87%E7%AD%BE.html HTTP/1.1" 404 736
 127.0.0.1 - - [05/May/2021:19:47:27 +0800] "GET /web_exercise/img%E6%A0%87%E7%AD%BE.html HTTP/1.1" 404 736
 127.0.0.1 - - [05/May/2021:19:49:44 +0800] "GET /web_exercise/img%E6%A0%87%E7%AD%BE.html HTTP/1.1" 404 736
+127.0.0.1 - - [05/May/2021:19:58:41 +0800] "GET /web_exercise/%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE.html HTTP/1.1" 404 751
+127.0.0.1 - - [05/May/2021:19:59:45 +0800] "GET /web_exercise/Hyperlinks.html HTTP/1.1" 304 -
+127.0.0.1 - - [05/May/2021:20:23:42 +0800] "GET /web_exercise/%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE.html HTTP/1.1" 404 751
+127.0.0.1 - - [05/May/2021:20:32:35 +0800] "GET /web_exercise/%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE.html HTTP/1.1" 404 751
+127.0.0.1 - - [05/May/2021:20:33:13 +0800] "GET /web_exercise/%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE.html HTTP/1.1" 404 751
+127.0.0.1 - - [05/May/2021:20:33:35 +0800] "GET /web_exercise/%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE.html HTTP/1.1" 404 751
+127.0.0.1 - - [05/May/2021:20:35:50 +0800] "GET / HTTP/1.1" 404 697
+127.0.0.1 - - [05/May/2021:20:35:50 +0800] "GET /web_exercise/%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE.html HTTP/1.1" 404 751
+127.0.0.1 - - [05/May/2021:20:35:57 +0800] "GET /web_exercise/Hello.html HTTP/1.1" 200 1097
